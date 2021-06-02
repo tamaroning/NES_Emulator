@@ -1,2 +1,2 @@
-./emulator test/helloworld.nes
+./main test/helloworld.nes
 echo OK

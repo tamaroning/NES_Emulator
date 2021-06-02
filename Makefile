@@ -1,7 +1,10 @@
-emulator: main.cpp
-	g++ -o emulator main.cpp
+CC := g++
+
+main : main.o emulator_function.o instruction.o
+
+main.o : emulator_function.o instruction.o
 
 
-clean:
-	rm -f emulator emulator.o
-
+clean :
+	$(RM) -f *.o
+	$(RM) -f main
